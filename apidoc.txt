@@ -1,0 +1,86 @@
+authentication
+
+shema:User
+
+Attributes: [username,email,password]
+
+1)api for creating user account
+
+    url:http://127.0.0.1:8000/api/register/
+
+    method:POST
+
+    body:{
+        username
+        email
+        password
+    }
+=================================================
+
+
+shema:Income
+
+Attributes:[title,amount,category,created_date]
+
+1)api for listing  all income
+
+    url:http://127.0.0.1:8000/api/income/
+
+    method:GET
+
+    body:nill
+
+    authorization:{username,password} basic authentication
+
+2)api for adding income
+
+    url:http://127.0.0.1:8000/api/income/
+
+    method:POST
+
+    body:{
+        title,amount,category
+    }
+
+    authorization:{username,password}
+
+3)api for upadatind income
+
+    url:http://127.0.0.1:8000/api/income/{id}/
+
+    method:PUT
+
+    body:{
+        title,amount,category
+
+    }
+    authorization:{username,password}
+
+4)api for detail 
+
+    url:http://127.0.0.1:8000/api/income/{id}/
+
+    method:GET
+
+    body:nill
+
+    authorization:{username,password}
+
+
+5)api for delete income
+
+    url:http://127.0.0.1:8000/api/income/{id}/
+
+    method:delete
+
+    body:nill
+    
+    authorization:{username,password}
+    
+
+
+permission method
+
+object level 
+
+view level
